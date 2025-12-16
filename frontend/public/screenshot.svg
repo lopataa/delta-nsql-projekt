@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0b1225"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect x="60" y="60" width="840" height="110" rx="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+  <text x="90" y="115" fill="#e0e7ff" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600">Task Tracker UI</text>
+  <text x="90" y="145" fill="#c7d2fe" font-family="Inter, Arial, sans-serif" font-size="16">Redis Stack · Socket.io · Next.js</text>
+  <rect x="60" y="190" width="280" height="260" rx="16" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" />
+  <text x="80" y="225" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">Login / Registrace</text>
+  <rect x="380" y="190" width="520" height="120" rx="16" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" />
+  <text x="400" y="225" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">Formulář pro nový úkol</text>
+  <rect x="380" y="330" width="520" height="120" rx="16" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" />
+  <text x="400" y="365" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">Seznam úkolů (real-time Socket.io)</text>
+  <text x="400" y="395" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="14">Filtry: kategorie · stav · fulltext</text>
+  <text x="400" y="420" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="14">Akce: dokončit · smazat · upravit</text>
+  <text x="70" y="470" fill="#c7d2fe" font-family="Inter, Arial, sans-serif" font-size="12">Ilustrační náhled UI (statický SVG)</text>
+</svg>

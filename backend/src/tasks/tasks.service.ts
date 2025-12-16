@@ -73,9 +73,10 @@ export class TasksService {
     }
 
     const newStatus = payload.status ?? existing.status;
+    const patch = Object.fromEntries(Object.entries(payload).filter(([, value]) => value !== undefined));
     const updated: Task = {
       ...existing,
-      ...payload,
+      ...patch,
       status: newStatus,
       completed: newStatus === 'done',
       updatedAt: new Date().toISOString(),
@@ -110,7 +111,7 @@ export class TasksService {
   }
 
   private escapeTag(value: string): string {
-    return value.replace(/([\\-\\,\\.\\s<>\\{\\}\\[\\]\"'\\:;|!@#\\$%\\^&\\*\\(\\)_\\+=])/g, '\\$1');
+    return value.replace(/([,.\s<>\\{}\[\]"':;|=+\-@#$%^&*()!~])/g, '\\$1');
   }
 
   private buildSearchQuery(userId: string, filters: FilterTasksDto): string {
